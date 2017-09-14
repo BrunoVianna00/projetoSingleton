@@ -54,5 +54,10 @@ public class Pessoa {
         this.RG = RG;
     }
     
+    @Override
+    public String toString() {
+		return "Nome: " + this.nome+ ", RG: " + this.RG; 
+			   
+	}
     
 }
