@@ -15,9 +15,11 @@ public class AviaoSingletonTeste {
     public static void main(String[] args) {
          agendarAssento("1A");
           agendarAssento("1A");
+          agendarAssento("1B");
+          agendarAssento("1B");
     }
     private static void agendarAssento(String assento){
         AviaoSingleton a = AviaoSingleton.getINSTANCE();
-        System.out.println("O Assento esta ocupado: " + a.bookAssento(assento));
+        System.out.println("O Assento " + assento + " esta ocupado: " + a.bookAssento(assento));
     }
 }
