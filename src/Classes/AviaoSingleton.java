@@ -24,7 +24,7 @@ public class AviaoSingleton {
         assentosDisponiveis.add("1A");
         assentosDisponiveis.add("1B");
     }
-    public boolean bookAssento(String assento){
+    public boolean marcarAssento(String assento){
          return assentosDisponiveis.remove(assento);
      }
 }
